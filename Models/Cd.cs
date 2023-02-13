@@ -16,8 +16,10 @@ namespace CdDirectory.Models
         [Required(ErrorMessage = "Fyll i årtal skivan släpptes")]
         [Display(Name = "År albumet släpptes:")]
         public int? Releaseyear { get; set; }
+
         [Display(Name = "Artist:")]
         public int ArtistId { get; set; }
+
         public Artist? Artist { get; set; }
     }
 

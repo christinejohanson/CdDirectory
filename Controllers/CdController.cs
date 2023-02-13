@@ -19,26 +19,31 @@ namespace CdDirectory.Controllers
             _context = context;
         }
 
-        /* GET: Cd Testa byta ut denna till search box */
+        /* GET: Cd Original cd/index.
         public async Task<IActionResult> Index()
         {
             var cdContext = _context.Cd.Include(c => c.Artist);
-            return View(await cdContext.ToListAsync());
-        }
+            return View(await cdContext.ToListAsync()); 
+        } */
 
-        /* microsofts dokumentation 
-        public async Task<IActionResult> Index(string sortOrder, string searchString)
+        /* index med sökfunktion */
+        public async Task<IActionResult> Index(string searchString)
         {
             ViewData["CurrentFilter"] = searchString;
-            var cdContext = _context.Cd.Include(c => c.Artist);
+
+            var cdContext = from s in _context.Cd.Include(s => s.Artist)
+                            select s;
+
             if (!String.IsNullOrEmpty(searchString))
             {
-                cdContext = cdContext.Where(s => s.Id.Contains(searchString)
-                                       || s.ArtistId.Contains(searchString));
-            }
-            return View(await cdContext.AsNoTracking().ToListAsync());
+                cdContext = cdContext.Where(s => s.Name.Contains(searchString));
 
-        } */
+                /*   cdContext = cdContext.Where(s => s.Name.ToUpper().Contains(searchString.ToUpper()));*/
+
+            }
+            return View(await cdContext.ToListAsync());
+
+        }
 
 
 

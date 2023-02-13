@@ -6,6 +6,16 @@
 
 <h1 class="display-4">Skivor</h1>
 
+<form asp-action="Index" method="get">
+    <div class="form-actions no-color">
+        <p>
+            Sök på albumnamn: <input type="text" name="SearchString" value="@ViewData["CurrentFilter"]" />
+            <input type="submit" value="Search" class="btn btn-secondary" /><br>
+            <a asp-action="Index">Tillbaka till hela listan.</a>
+        </p>
+    </div>
+</form>
+
 
 <table class="table">
     <thead>
@@ -17,7 +27,7 @@
                 @Html.DisplayNameFor(model => model.Releaseyear)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Artist)
+                @Html.DisplayNameFor(model => model.ArtistId)
             </th>
             <th></th>
         </tr>
@@ -35,6 +45,7 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Artist.ArtistName)
                 </td>
+
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                     <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
