@@ -16565,6 +16565,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/christinejohanson/Code/CdDirectory/Views/Lender/Create.cshtml",
+      "TargetPath": "Views\\Lender\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/christinejohanson/Code/CdDirectory/Views/Cd/Details.cshtml",
       "TargetPath": "Views\\Cd\\Details.cshtml",
       "FileKind": "mvc"
@@ -16605,6 +16610,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/christinejohanson/Code/CdDirectory/Views/Lender/Details.cshtml",
+      "TargetPath": "Views\\Lender\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/christinejohanson/Code/CdDirectory/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -16635,8 +16645,23 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/christinejohanson/Code/CdDirectory/Views/Lender/Index.cshtml",
+      "TargetPath": "Views\\Lender\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/christinejohanson/Code/CdDirectory/Views/Lender/Delete.cshtml",
+      "TargetPath": "Views\\Lender\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/christinejohanson/Code/CdDirectory/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/christinejohanson/Code/CdDirectory/Views/Lender/Edit.cshtml",
+      "TargetPath": "Views\\Lender\\Edit.cshtml",
       "FileKind": "mvc"
     }
   ],

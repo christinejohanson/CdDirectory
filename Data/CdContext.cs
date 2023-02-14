@@ -14,6 +14,10 @@ namespace CdDirectory.Data
         //knyta an till model
         public DbSet<Cd> Cd { get; set; }
         public DbSet<Cd> Artist { get; set; }
+        //model för lender
+        public DbSet<Cd> Lender { get; set; }
         public DbSet<CdDirectory.Models.Artist> Artist_1 { get; set; } = default!;
+        public DbSet<CdDirectory.Models.Lender> Lender_1 { get; set; } = default!;
+
     }
 }
