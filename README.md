@@ -23,12 +23,13 @@ Mål med uppgifte:
 - Förstår hur klassen DbContext används och hur klasser ärver från denna klass.
 
 ### Plus-uppgift:
-- Att webbplatsen bygger på egen HTML/CSS/JavaScript, ej på autogenererad (scaffolding) Bootstrap.
-- Implementera en enkel validering för ett eller fler input-fält.
-- Använda minst tre olika typer av inmatnings-kontroller i vyn. 
+- Möjlighet att låna ut CD till användare och databas håller reda på vem som har skivan och datum när detta gjordes.
+- En till tabell ska lagras i databasen med data om den som lånar CD
+- Skapa en sökfunktion för CD.
 
-Hann ej med: 
-- Skapa någon slags partial som laddas in och används i minst två Views.
+Hann ej med att lösa: (detta finns i branch Lender och Lender2)
+- Låna ut CD.
+- Skapa tabell för lån av CD.
 
 ### Länk till publicerad demonstration av projektet:
-[Demonstration](https://www.youtube.com/watch?v=zYBS_a06C1w)
+
