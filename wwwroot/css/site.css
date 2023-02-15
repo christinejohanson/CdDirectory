@@ -2,6 +2,16 @@ html {
   font-size: 14px;
 }
 
+
+
+.container {
+  background-color: rgb(251, 231, 213);
+}
+footer {
+  background-color: white;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;

@@ -16633,11 +16633,6 @@
       "FilePath": "/Users/christinejohanson/Code/CdDirectory/Views/Artist/Delete.cshtml",
       "TargetPath": "Views\\Artist\\Delete.cshtml",
       "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/christinejohanson/Code/CdDirectory/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"
