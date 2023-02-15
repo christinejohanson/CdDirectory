@@ -33,4 +33,15 @@ namespace CdDirectory.Models
 
         public List<Cd>? Cd { get; set; }
     }
+
+    public class Lender
+    {
+        public int LenderId { get; set; }
+
+        public int LenderName { get; set; }
+        public DateTime StartLend { get; set; }
+        public DateTime EndLend { get; set; }
+        public int Id { get; set; }
+        public Cd? Cd { get; set; }
+    }
 }

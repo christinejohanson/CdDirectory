@@ -15,5 +15,7 @@ namespace CdDirectory.Data
         public DbSet<Cd> Cd { get; set; }
         public DbSet<Cd> Artist { get; set; }
         public DbSet<CdDirectory.Models.Artist> Artist_1 { get; set; } = default!;
+        public DbSet<CdDirectory.Models.Lender> Lender { get; set; } = default!;
+
     }
 }

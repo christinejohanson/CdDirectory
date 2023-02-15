@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CdDirectory.Migrations
 {
     [DbContext(typeof(CdContext))]
-    [Migration("20230210202125_InitialCreate")]
+    [Migration("20230214151709_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -27,6 +27,7 @@ namespace CdDirectory.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("ArtistName")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("ArtistId");
@@ -44,9 +45,11 @@ namespace CdDirectory.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("Releaseyear")
+                        .IsRequired()
                         .HasColumnType("INTEGER");
 
                     b.HasKey("Id");
@@ -54,6 +57,34 @@ namespace CdDirectory.Migrations
                     b.HasIndex("ArtistId");
 
                     b.ToTable("Cd");
+                });
+
+            modelBuilder.Entity("CdDirectory.Models.Lender", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int?>("CdId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("EndLend")
+                        .HasColumnType("TEXT");
+
+                    b.Property<int>("LenderId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("LenderName")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<DateTime>("StartLend")
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CdId");
+
+                    b.ToTable("Lender");
                 });
 
             modelBuilder.Entity("CdDirectory.Models.Cd", b =>
@@ -65,6 +96,15 @@ namespace CdDirectory.Migrations
                         .IsRequired();
 
                     b.Navigation("Artist");
+                });
+
+            modelBuilder.Entity("CdDirectory.Models.Lender", b =>
+                {
+                    b.HasOne("CdDirectory.Models.Cd", "Cd")
+                        .WithMany()
+                        .HasForeignKey("CdId");
+
+                    b.Navigation("Cd");
                 });
 
             modelBuilder.Entity("CdDirectory.Models.Artist", b =>
