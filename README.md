@@ -1,5 +1,5 @@
 # DT191G Webbutveckling med .NET / Christine Johanson chjo2104
-## Laboration 3 Entitiy Framework Core
+## Laboration 3 Entity Framework Core
 
 ### Uppgiften:
 Skapa en databasdriven ASP.NET MVC Core Webbplats med hjälp av Entitiy Framework. Förstå sambanden mellan olika tabeller i en databas. Samt förstå 
@@ -7,7 +7,7 @@ och använda CRUD.
 
 Uppgiften består av en obligatorisk del och en plus-uppgift. Jag hann tyvärr inte med plus-uppgiften utan bara obligatoriska delen.
 
-Mål med uppgifte: 
+Mål med uppgiften: 
 - Skapa databasdrivet projekt som bygger på designmönstret MVC.
 - Använda Entity Framework Core.
 - Använda "code first" och scaffolding.
